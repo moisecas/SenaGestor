@@ -35,6 +35,9 @@ public class Controllers {
     @Autowired
     MovimientosRepository movimientosRepositor;
 
+
+
+
     //EMPRESAS
     @GetMapping({"/","/VerEmpresas"})
     public String viewEmpresas(Model model, @ModelAttribute("mensaje") String mensaje){
