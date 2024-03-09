@@ -19,6 +19,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.List;
 
@@ -35,6 +38,7 @@ public class Controllers {
     @Autowired
     MovimientosRepository movimientosRepositor;
 
+    private static final Logger logger = LoggerFactory.getLogger(Controllers.class);
 
 
 
@@ -54,6 +58,16 @@ public class Controllers {
         model.addAttribute("mensaje",mensaje);
         return "agregarEmpresa";
     }
+
+//    @PostMapping("/GuardarEmpresa")
+//    public String guardarEmpresa(Empresa emp, RedirectAttributes redirectAttributes){
+//        if(empresaService.saveOrUpdateEmpresa(emp)==true){
+//            redirectAttributes.addFlashAttribute("mensaje","saveOK");
+//            return "redirect:/VerEmpresas";
+//        }
+//        redirectAttributes.addFlashAttribute("mensaje","saveError");
+//        return "redirect:/AgregarEmpresa";
+//    }
 
     @PostMapping("/GuardarEmpresa")
     public String guardarEmpresa(Empresa emp, RedirectAttributes redirectAttributes){
