@@ -71,13 +71,17 @@ public class Controllers {
 
     @PostMapping("/GuardarEmpresa")
     public String guardarEmpresa(Empresa emp, RedirectAttributes redirectAttributes){
-        if(empresaService.saveOrUpdateEmpresa(emp)==true){
-            redirectAttributes.addFlashAttribute("mensaje","saveOK");
+        logger.info("Intentando guardar la empresa: {}", emp); // Log cuando se intenta guardar
+        if(empresaService.saveOrUpdateEmpresa(emp) == true){
+            logger.info("Empresa guardada con éxito: {}", emp); // Log si se guarda con éxito
+            redirectAttributes.addFlashAttribute("mensaje", "saveOK");
             return "redirect:/VerEmpresas";
         }
-        redirectAttributes.addFlashAttribute("mensaje","saveError");
+        logger.error("Error al guardar la empresa: {}", emp); // Log si hay un error
+        redirectAttributes.addFlashAttribute("mensaje", "saveError");
         return "redirect:/AgregarEmpresa";
     }
+
 
     @GetMapping("/EditarEmpresa/{id}")
     public String editarEmpresa(Model model, @PathVariable Integer id, @ModelAttribute("mensaje") String mensaje){
