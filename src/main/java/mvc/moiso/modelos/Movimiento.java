@@ -70,4 +70,8 @@ public class Movimiento {
         this.fecha = fecha;
     }
 
+    public double getDescripcion() {
+        return 0;
+
+    }
 }
