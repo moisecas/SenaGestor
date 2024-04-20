@@ -18,7 +18,7 @@ public class ExcelService {
     private MovimientosRepository movimientosRepository; //movimientosRepository es un repositorio
 
     public ByteArrayInputStream exportarMovimientosAExcel() throws IOException {
-        String[] columnas = {"ID", "Descripción", "Monto", "Fecha"};
+        String[] columnas = {"ID", "Código concepto", "Monto", "Fecha"};
         try (
                 Workbook workbook = new XSSFWorkbook();
                 ByteArrayOutputStream out = new ByteArrayOutputStream();
