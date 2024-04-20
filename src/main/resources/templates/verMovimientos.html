@@ -123,6 +123,11 @@
     <button type="button" class="btn btn-primary"><a th:href="@{/VerEmpleados}">Ver lista de Empleados</a></button>
 </div>
 
+<div class="container mt-5">
+    <!-- Botón para descargar los movimientos en Excel -->
+    <a href="/descargarMovimientosExcel" class="btn btn-success">Descargar Movimientos en Excel</a>
+</div>
+
 <script th:inline="javascript">
     window.onload=function(){
 

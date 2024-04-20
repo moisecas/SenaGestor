@@ -22,6 +22,14 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import mvc.moiso.modelos.ExcelService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+
 
 import java.util.List;
 
@@ -38,9 +46,24 @@ public class Controllers {
     @Autowired
     MovimientosRepository movimientosRepositor;
 
+    @Autowired
+    private ExcelService excelService; //Inyectamos el servicio de excel
+
     private static final Logger logger = LoggerFactory.getLogger(Controllers.class);
 
+//generar el excel
+@GetMapping("/descargarMovimientosExcel")
+public ResponseEntity<byte[]> descargarMovimientosExcel() throws IOException {
+    ByteArrayInputStream stream = excelService.exportarMovimientosAExcel();
 
+    HttpHeaders headers = new HttpHeaders();
+    headers.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=movimientos.xlsx");
+
+    return ResponseEntity
+            .ok()
+            .headers(headers)
+            .body(stream.readAllBytes());
+}
 
     //EMPRESAS
     @GetMapping({"/","/VerEmpresas"})
