@@ -9,13 +9,13 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.List;
-import mvc.moiso.repository.MovimientosRepository; // Asume que tienes un repositorio para los movimientos
+import mvc.moiso.repository.MovimientosRepository; // repositorio para los movimientos
 
 @Service
 public class ExcelService {
 
     @Autowired
-    private MovimientosRepository movimientosRepository; // Asume que tienes un repositorio para los movimientos
+    private MovimientosRepository movimientosRepository; //movimientosRepository es un repositorio
 
     public ByteArrayInputStream exportarMovimientosAExcel() throws IOException {
         String[] columnas = {"ID", "Descripción", "Monto", "Fecha"};
@@ -39,9 +39,9 @@ public class ExcelService {
             for (Movimiento movimiento : movimientos) {
                 Row row = sheet.createRow(rowNum++);
                 row.createCell(0).setCellValue(movimiento.getId());
-                row.createCell(1).setCellValue(movimiento.getDescripcion());
+                row.createCell(1).setCellValue(movimiento.getConcepto());
                 row.createCell(2).setCellValue(movimiento.getMonto());
-                row.createCell(3).setCellValue(movimiento.getFecha().toString()); // Asegúrate de formatear la fecha como prefieras
+                row.createCell(3).setCellValue(movimiento.getFecha().toString());
             }
 
             workbook.write(out);
