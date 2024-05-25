@@ -65,6 +65,12 @@ public ResponseEntity<byte[]> descargarMovimientosExcel() throws IOException {
             .body(stream.readAllBytes());
 }
 
+//postlogin
+    @GetMapping("/index")
+    public String index(){
+        return "index";
+    }
+
     //EMPRESAS
     @GetMapping({"/","/VerEmpresas"})
     public String viewEmpresas(Model model, @ModelAttribute("mensaje") String mensaje){

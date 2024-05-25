@@ -39,9 +39,9 @@ public class Handler extends SimpleUrlAuthenticationSuccessHandler {
         }
 
         if (esAdministrativo(roles)) {
-            url = "/VerEmpresas";
+            url = "/index";
         } else if (esOperativo(roles)) {
-            url = "/VerMovimientos";
+            url = "/index";
         } else {
             url = "/Denegado";
         }
