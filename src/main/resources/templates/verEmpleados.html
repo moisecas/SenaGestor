@@ -58,7 +58,7 @@
 <div class="container">
     <p th:inline="text" class="text-right">User: [[${#httpServletRequest.remoteUser}]]</p>
     <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
-
+    <button type="button" class="btn btn-primary"><a th:href="@{/index}">Pagina principal</a></button>
     <h1> Lista de Empleados</h1>
     <!--Dibujamos la tabla-->
     <br><table class="table table-bordered">
