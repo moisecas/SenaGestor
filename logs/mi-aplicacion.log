@@ -1133,3 +1133,876 @@
 2024-06-09 13:25:25.692 DEBUG 25780 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
 2024-06-09 13:25:25.692 DEBUG 25780 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
 2024-06-09 13:25:25.693 DEBUG 25780 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-09 13:31:26.670  INFO 19884 --- [restartedMain] mvc.moiso.MoisoApplication               : Starting MoisoApplication using Java 18.0.2.1 on Moiso with PID 19884 (C:\Users\moises dev\Documents\gestor\Andres-Carnes-release\moiso\target\classes started by moises dev in C:\Users\moises dev\Documents\gestor\Andres-Carnes-release\moiso)
+2024-06-09 13:31:26.673  INFO 19884 --- [restartedMain] mvc.moiso.MoisoApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-09 13:31:26.765  INFO 19884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-09 13:31:26.766  INFO 19884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-09 13:31:27.785  INFO 19884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-09 13:31:27.788  INFO 19884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-06-09 13:31:27.832  INFO 19884 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface mvc.moiso.repository.EmpleadoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-06-09 13:31:27.834  INFO 19884 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface mvc.moiso.repository.EmpresaRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-06-09 13:31:27.836  INFO 19884 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface mvc.moiso.repository.MovimientosRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-06-09 13:31:27.837  INFO 19884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 0 JDBC repository interfaces.
+2024-06-09 13:31:27.852  INFO 19884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-09 13:31:27.854  INFO 19884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-09 13:31:27.899  INFO 19884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2024-06-09 13:31:28.409  INFO 19884 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$dd18e5ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-09 13:31:28.521  INFO 19884 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-06-09 13:31:29.165  INFO 19884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-09 13:31:29.187  INFO 19884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-09 13:31:29.188  INFO 19884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-06-09 13:31:29.382  INFO 19884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-09 13:31:29.383  INFO 19884 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2616 ms
+2024-06-09 13:31:29.564 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Driver class org.postgresql.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@243584e0
+2024-06-09 13:31:29.798 DEBUG 19884 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@243584e0
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/moises%20dev/Documents/gestor/Andres-Carnes-release/moiso/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		mvc.moiso.modelos.Empleado
+		mvc.moiso.modelos.Empresa
+		mvc.moiso.modelos.Movimiento]
+	Mapping files names []
+	Properties []
+2024-06-09 13:31:29.819 DEBUG 19884 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2024-06-09 13:31:29.822 DEBUG 19884 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2024-06-09 13:31:29.826 DEBUG 19884 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2024-06-09 13:31:29.898  INFO 19884 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-06-09 13:31:29.899 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2024-06-09 13:31:30.142 DEBUG 19884 --- [restartedMain] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2024-06-09 13:31:30.153 DEBUG 19884 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-06-09 13:31:30.155 DEBUG 19884 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2024-06-09 13:31:30.173  INFO 19884 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-06-09 13:31:30.219 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@4e3f3a1c
+2024-06-09 13:31:30.220 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@4e3f3a1c
+2024-06-09 13:31:30.220 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4e3f3a1c
+2024-06-09 13:31:30.220 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1368f375
+2024-06-09 13:31:30.220 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@304bd5aa
+2024-06-09 13:31:30.222 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@37128f8b
+2024-06-09 13:31:30.223 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@5074e8d5
+2024-06-09 13:31:30.223 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@5074e8d5
+2024-06-09 13:31:30.223 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@5074e8d5
+2024-06-09 13:31:30.224 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@24c2ca0
+2024-06-09 13:31:30.224 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@24c2ca0
+2024-06-09 13:31:30.224 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@24c2ca0
+2024-06-09 13:31:30.225 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@5cc9710b
+2024-06-09 13:31:30.226 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@5cc9710b
+2024-06-09 13:31:30.226 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5cc9710b
+2024-06-09 13:31:30.227 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@34fab682
+2024-06-09 13:31:30.227 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@34fab682
+2024-06-09 13:31:30.227 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@34fab682
+2024-06-09 13:31:30.228 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@42a0cc5f
+2024-06-09 13:31:30.228 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@42a0cc5f
+2024-06-09 13:31:30.228 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@42a0cc5f
+2024-06-09 13:31:30.229 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@4827e725
+2024-06-09 13:31:30.229 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@4827e725
+2024-06-09 13:31:30.229 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4827e725
+2024-06-09 13:31:30.230 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@6bbe59b0
+2024-06-09 13:31:30.230 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@6bbe59b0
+2024-06-09 13:31:30.230 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6bbe59b0
+2024-06-09 13:31:30.231 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4eb312be
+2024-06-09 13:31:30.231 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4eb312be
+2024-06-09 13:31:30.232 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@668240ea
+2024-06-09 13:31:30.232 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@668240ea
+2024-06-09 13:31:30.233 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@7c858140
+2024-06-09 13:31:30.233 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@7c858140
+2024-06-09 13:31:30.234 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@fbd4854
+2024-06-09 13:31:30.234 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6768defc
+2024-06-09 13:31:30.235 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@57d26811
+2024-06-09 13:31:30.235 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@57d26811
+2024-06-09 13:31:30.236 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@1f02609c
+2024-06-09 13:31:30.236 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1f02609c
+2024-06-09 13:31:30.237 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@59193381
+2024-06-09 13:31:30.237 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@59193381
+2024-06-09 13:31:30.238 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@65773857
+2024-06-09 13:31:30.238 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@65773857
+2024-06-09 13:31:30.240 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@56ff3f56
+2024-06-09 13:31:30.240 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@56ff3f56
+2024-06-09 13:31:30.241 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3b82933
+2024-06-09 13:31:30.241 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3b82933
+2024-06-09 13:31:30.243 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@39d08d01
+2024-06-09 13:31:30.243 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@39d08d01
+2024-06-09 13:31:30.244 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@f440e29
+2024-06-09 13:31:30.244 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@f440e29
+2024-06-09 13:31:30.246 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2f77702
+2024-06-09 13:31:30.247 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2f77702
+2024-06-09 13:31:30.248 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@6f13bfa4
+2024-06-09 13:31:30.248 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@6f13bfa4
+2024-06-09 13:31:30.249 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@1a3e43a1
+2024-06-09 13:31:30.249 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1a3e43a1
+2024-06-09 13:31:30.251 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@471181a6
+2024-06-09 13:31:30.251 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@471181a6
+2024-06-09 13:31:30.251 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@471181a6
+2024-06-09 13:31:30.252 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@51b41c36
+2024-06-09 13:31:30.253 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@495b1654
+2024-06-09 13:31:30.253 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@495b1654
+2024-06-09 13:31:30.253 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@495b1654
+2024-06-09 13:31:30.254 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3d4cfb6c
+2024-06-09 13:31:30.254 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@221e36a0
+2024-06-09 13:31:30.255 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@59cf322e
+2024-06-09 13:31:30.255 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@59cf322e
+2024-06-09 13:31:30.256 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@7c712b83
+2024-06-09 13:31:30.256 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7c712b83
+2024-06-09 13:31:30.260 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@2611a6d1
+2024-06-09 13:31:30.262 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2611a6d1
+2024-06-09 13:31:30.265 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@6294d776
+2024-06-09 13:31:30.266 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6294d776
+2024-06-09 13:31:30.267 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6676fed7
+2024-06-09 13:31:30.267 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6676fed7
+2024-06-09 13:31:30.273 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@38ff4b1
+2024-06-09 13:31:30.279 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@5ad344e8
+2024-06-09 13:31:30.279 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@5ad344e8
+2024-06-09 13:31:30.279 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@5ad344e8
+2024-06-09 13:31:30.280 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@23cc7e08
+2024-06-09 13:31:30.280 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@23cc7e08
+2024-06-09 13:31:30.282 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@23cc7e08
+2024-06-09 13:31:30.283 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@2a59078e
+2024-06-09 13:31:30.284 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@70674b2b
+2024-06-09 13:31:30.284 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@67db5c6b
+2024-06-09 13:31:30.285 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@67db5c6b
+2024-06-09 13:31:30.285 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@67db5c6b
+2024-06-09 13:31:30.286 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4649cca4
+2024-06-09 13:31:30.286 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4649cca4
+2024-06-09 13:31:30.286 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4649cca4
+2024-06-09 13:31:30.286 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@71697284
+2024-06-09 13:31:30.287 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@21e2f071
+2024-06-09 13:31:30.288 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@2a2e76df
+2024-06-09 13:31:30.288 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2a2e76df
+2024-06-09 13:31:30.289 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@72b610c4
+2024-06-09 13:31:30.290 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@73f2462f
+2024-06-09 13:31:30.290 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@73f2462f
+2024-06-09 13:31:30.291 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@58fa96fa
+2024-06-09 13:31:30.292 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@58fa96fa
+2024-06-09 13:31:30.292 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@7367db5d
+2024-06-09 13:31:30.292 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1a4def30
+2024-06-09 13:31:30.294 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@11f061ab
+2024-06-09 13:31:30.298 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@6e5acc09
+2024-06-09 13:31:30.299 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6e5acc09
+2024-06-09 13:31:30.299 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@33b59bce
+2024-06-09 13:31:30.299 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1fa99093
+2024-06-09 13:31:30.299 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@6afa63b7
+2024-06-09 13:31:30.300 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@58de7451
+2024-06-09 13:31:30.300 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@472aef6f
+2024-06-09 13:31:30.300 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@14d4c211
+2024-06-09 13:31:30.300 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2d8aece7
+2024-06-09 13:31:30.300 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6dd69fb
+2024-06-09 13:31:30.311 DEBUG 19884 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@701ff1c8] into BootstrapContext; was [null]
+2024-06-09 13:31:30.312 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@701ff1c8) [was null]
+2024-06-09 13:31:30.313 DEBUG 19884 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@2c9e4331] into BootstrapContext; was [null]
+2024-06-09 13:31:30.313 DEBUG 19884 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@dbfac8e] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@6a804b32]
+2024-06-09 13:31:30.333 DEBUG 19884 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@701ff1c8]
+2024-06-09 13:31:30.333 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@701ff1c8]
+2024-06-09 13:31:30.354 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2024-06-09 13:31:30.358 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2024-06-09 13:31:30.360 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2024-06-09 13:31:30.360 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2024-06-09 13:31:30.362 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2024-06-09 13:31:30.365 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2024-06-09 13:31:30.367 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2024-06-09 13:31:30.369 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-06-09 13:31:30.370 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2024-06-09 13:31:30.372 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2024-06-09 13:31:30.372 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2024-06-09 13:31:30.374 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2024-06-09 13:31:30.374 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-06-09 13:31:30.375 DEBUG 19884 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2024-06-09 13:31:30.393 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2024-06-09 13:31:30.400 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension................................false
+2024-06-09 13:31:30.400 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : autoCommit................................true
+2024-06-09 13:31:30.400 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : catalog................................none
+2024-06-09 13:31:30.400 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : connectionInitSql................................none
+2024-06-09 13:31:30.400 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : connectionTestQuery................................none
+2024-06-09 13:31:30.404 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : connectionTimeout................................60000
+2024-06-09 13:31:30.404 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : dataSource................................none
+2024-06-09 13:31:30.404 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : dataSourceClassName................................none
+2024-06-09 13:31:30.405 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI................................none
+2024-06-09 13:31:30.405 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : dataSourceProperties................................{password=<masked>}
+2024-06-09 13:31:30.405 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : driverClassName................................"org.postgresql.Driver"
+2024-06-09 13:31:30.406 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName................................none
+2024-06-09 13:31:30.406 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : healthCheckProperties................................{}
+2024-06-09 13:31:30.406 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry................................none
+2024-06-09 13:31:30.407 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : idleTimeout................................600000
+2024-06-09 13:31:30.407 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout................................1
+2024-06-09 13:31:30.408 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries................................false
+2024-06-09 13:31:30.408 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : jdbcUrl................................jdbc:postgresql://aws-0-us-west-1.pooler.supabase.com:5432/postgres
+2024-06-09 13:31:30.408 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : keepaliveTime................................300000
+2024-06-09 13:31:30.408 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold................................2000
+2024-06-09 13:31:30.409 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : maxLifetime................................1800000
+2024-06-09 13:31:30.409 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : maximumPoolSize................................20
+2024-06-09 13:31:30.409 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : metricRegistry................................none
+2024-06-09 13:31:30.409 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory................................none
+2024-06-09 13:31:30.409 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : minimumIdle................................5
+2024-06-09 13:31:30.410 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : password................................<masked>
+2024-06-09 13:31:30.410 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : poolName................................"HikariPool-1"
+2024-06-09 13:31:30.412 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : readOnly................................false
+2024-06-09 13:31:30.413 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : registerMbeans................................false
+2024-06-09 13:31:30.413 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : scheduledExecutor................................none
+2024-06-09 13:31:30.413 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : schema................................none
+2024-06-09 13:31:30.413 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : threadFactory................................internal
+2024-06-09 13:31:30.413 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : transactionIsolation................................default
+2024-06-09 13:31:30.413 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : username................................"postgres.stotkhhxthwumwcutuxz"
+2024-06-09 13:31:30.414 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : validationTimeout................................5000
+2024-06-09 13:31:30.414  INFO 19884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-09 13:31:32.852 DEBUG 19884 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9ce60f6
+2024-06-09 13:31:32.854  INFO 19884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-09 13:31:32.866 DEBUG 19884 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->
+       name : PostgreSQL
+    version : 15.1 (Ubuntu 15.1-1.pgdg20.04+1)
+      major : 15
+      minor : 1
+2024-06-09 13:31:32.867 DEBUG 19884 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.3.6
+      major : 42
+      minor : 3
+2024-06-09 13:31:32.868 DEBUG 19884 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.2
+2024-06-09 13:31:32.896  INFO 19884 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-06-09 13:31:32.913 DEBUG 19884 --- [restartedMain] o.h.e.j.env.spi.IdentifierHelperBuilder  : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2024-06-09 13:31:32.963 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=1, active=1, idle=0, waiting=0)
+2024-06-09 13:31:32.965 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=1, active=1, idle=0, waiting=0)
+2024-06-09 13:31:33.247 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@2adf1d2a
+2024-06-09 13:31:33.248 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@2adf1d2a
+2024-06-09 13:31:33.248 DEBUG 19884 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6676fed7
+2024-06-09 13:31:33.253 DEBUG 19884 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3f4f3eee] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@75a0343]
+2024-06-09 13:31:33.326 DEBUG 19884 --- [restartedMain] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2024-06-09 13:31:33.342 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: mvc.moiso.modelos.Empleado
+2024-06-09 13:31:33.367 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2024-06-09 13:31:33.375 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name Empleado
+2024-06-09 13:31:33.378 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity mvc.moiso.modelos.Empleado on table empleados
+2024-06-09 13:31:33.404 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empleados), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.407 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [mvc.moiso.modelos.Empleado] is safe
+2024-06-09 13:31:33.407 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mvc.moiso.modelos.Empleado
+2024-06-09 13:31:33.408 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2024-06-09 13:31:33.412 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empleado:id]
+2024-06-09 13:31:33.415 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2024-06-09 13:31:33.419 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2024-06-09 13:31:33.427 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2024-06-09 13:31:33.434 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empleados), mappingColumn=correo, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.434 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property correo with lazy=false
+2024-06-09 13:31:33.435 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empleado:correo]
+2024-06-09 13:31:33.435 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for correo
+2024-06-09 13:31:33.435 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property correo
+2024-06-09 13:31:33.439 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='empresa_id', referencedColumn='', mappedBy=''}
+2024-06-09 13:31:33.439 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empleados), mappingColumn=empresa, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.446 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property empresa
+2024-06-09 13:31:33.448 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empleados), mappingColumn=estado, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.451 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property estado with lazy=false
+2024-06-09 13:31:33.454 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empleado:estado]
+2024-06-09 13:31:33.454 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for estado
+2024-06-09 13:31:33.455 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property estado
+2024-06-09 13:31:33.455 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empleados), mappingColumn=nombre, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.455 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property nombre with lazy=false
+2024-06-09 13:31:33.461 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empleado:nombre]
+2024-06-09 13:31:33.463 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for nombre
+2024-06-09 13:31:33.463 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property nombre
+2024-06-09 13:31:33.464 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empleados), mappingColumn=password, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.465 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property password with lazy=false
+2024-06-09 13:31:33.466 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empleado:password]
+2024-06-09 13:31:33.468 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for password
+2024-06-09 13:31:33.469 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property password
+2024-06-09 13:31:33.469 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empleados), mappingColumn=rol, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.470 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property rol with lazy=false
+2024-06-09 13:31:33.470 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empleado:rol]
+2024-06-09 13:31:33.471 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for rol
+2024-06-09 13:31:33.472 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property rol
+2024-06-09 13:31:33.486 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: mvc.moiso.modelos.Empresa
+2024-06-09 13:31:33.489 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2024-06-09 13:31:33.489 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name Empresa
+2024-06-09 13:31:33.490 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity mvc.moiso.modelos.Empresa on table empresa
+2024-06-09 13:31:33.492 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empresa), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.493 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [mvc.moiso.modelos.Empresa] is safe
+2024-06-09 13:31:33.493 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mvc.moiso.modelos.Empresa
+2024-06-09 13:31:33.494 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2024-06-09 13:31:33.494 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empresa:id]
+2024-06-09 13:31:33.495 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2024-06-09 13:31:33.495 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2024-06-09 13:31:33.496 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2024-06-09 13:31:33.496 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empresa), mappingColumn=nit, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.497 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property NIT with lazy=false
+2024-06-09 13:31:33.497 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empresa:NIT]
+2024-06-09 13:31:33.497 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for NIT
+2024-06-09 13:31:33.498 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property NIT
+2024-06-09 13:31:33.498 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empresa), mappingColumn=direccion, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.498 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property direccion with lazy=false
+2024-06-09 13:31:33.498 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empresa:direccion]
+2024-06-09 13:31:33.499 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for direccion
+2024-06-09 13:31:33.499 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property direccion
+2024-06-09 13:31:33.499 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empresa), mappingColumn=nombre, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.500 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property nombre with lazy=false
+2024-06-09 13:31:33.500 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empresa:nombre]
+2024-06-09 13:31:33.500 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for nombre
+2024-06-09 13:31:33.501 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property nombre
+2024-06-09 13:31:33.501 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(empresa), mappingColumn=telefono, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.501 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property telefono with lazy=false
+2024-06-09 13:31:33.501 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Empresa:telefono]
+2024-06-09 13:31:33.501 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for telefono
+2024-06-09 13:31:33.501 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property telefono
+2024-06-09 13:31:33.502 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: mvc.moiso.modelos.Movimiento
+2024-06-09 13:31:33.503 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2024-06-09 13:31:33.503 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name Movimiento
+2024-06-09 13:31:33.504 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity mvc.moiso.modelos.Movimiento on table movimientos
+2024-06-09 13:31:33.507 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(movimientos), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.507 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [mvc.moiso.modelos.Movimiento] is safe
+2024-06-09 13:31:33.508 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mvc.moiso.modelos.Movimiento
+2024-06-09 13:31:33.508 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2024-06-09 13:31:33.508 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Movimiento:id]
+2024-06-09 13:31:33.508 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2024-06-09 13:31:33.508 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2024-06-09 13:31:33.508 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2024-06-09 13:31:33.509 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(movimientos), mappingColumn=concepto, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.509 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property concepto with lazy=false
+2024-06-09 13:31:33.509 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Movimiento:concepto]
+2024-06-09 13:31:33.509 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for concepto
+2024-06-09 13:31:33.509 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property concepto
+2024-06-09 13:31:33.510 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(movimientos), mappingColumn=fecha, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.510 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property fecha with lazy=false
+2024-06-09 13:31:33.510 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Movimiento:fecha]
+2024-06-09 13:31:33.510 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for fecha
+2024-06-09 13:31:33.510 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property fecha
+2024-06-09 13:31:33.512 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(movimientos), mappingColumn=monto, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.513 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property monto with lazy=false
+2024-06-09 13:31:33.513 DEBUG 19884 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [mvc.moiso.modelos.Movimiento:monto]
+2024-06-09 13:31:33.513 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for monto
+2024-06-09 13:31:33.513 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property monto
+2024-06-09 13:31:33.513 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3JoinColumn{logicalColumnName='empleado_id', referencedColumn='', mappedBy=''}
+2024-06-09 13:31:33.513 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(movimientos), mappingColumn=usuario, insertable=true, updatable=true, unique=false}
+2024-06-09 13:31:33.514 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property usuario
+2024-06-09 13:31:33.516 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2024-06-09 13:31:33.516 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for correo
+2024-06-09 13:31:33.516 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for estado
+2024-06-09 13:31:33.517 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for nombre
+2024-06-09 13:31:33.517 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for password
+2024-06-09 13:31:33.517 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for rol
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for NIT
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for direccion
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for nombre
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for telefono
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for concepto
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for fecha
+2024-06-09 13:31:33.518 DEBUG 19884 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for monto
+2024-06-09 13:31:33.527 DEBUG 19884 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [empleados]
+2024-06-09 13:31:33.528 DEBUG 19884 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [empresa]
+2024-06-09 13:31:33.528 DEBUG 19884 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [movimientos]
+2024-06-09 13:31:33.530 DEBUG 19884 --- [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: mvc.moiso.modelos.Empresa
+2024-06-09 13:31:33.534 DEBUG 19884 --- [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: mvc.moiso.modelos.Empleado
+2024-06-09 13:31:33.537 DEBUG 19884 --- [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: mvc.moiso.modelos.Empresa
+2024-06-09 13:31:33.538 DEBUG 19884 --- [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : Resolving reference to class: mvc.moiso.modelos.Empleado
+2024-06-09 13:31:33.636 DEBUG 19884 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Building session factory
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : SessionFactory name : null
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic flush during beforeCompletion(): enabled
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic session close at end of transaction: disabled
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Statistics: disabled
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Deleted entity synthetic identifier rollback: disabled
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Default entity-mode: pojo
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Allow initialization of lazy state outside session : disabled
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Using BatchFetchStyle : LEGACY
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Default batch fetch size: -1
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Maximum outer join fetch depth: null
+2024-06-09 13:31:33.638 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Default null ordering: NONE
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Order SQL updates by primary key: disabled
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Order SQL inserts for batching: disabled
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : multi-tenancy strategy : NONE
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JTA Track by Thread: enabled
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Query language substitutions: {}
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Named query checking : enabled
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache: disabled
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level query cache: disabled
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level query cache factory: null
+2024-06-09 13:31:33.639 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache region prefix: null
+2024-06-09 13:31:33.640 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Optimize second-level cache for minimal puts: disabled
+2024-06-09 13:31:33.640 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Structured second-level cache entries: disabled
+2024-06-09 13:31:33.640 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache direct-reference entries: disabled
+2024-06-09 13:31:33.641 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic eviction of collection cache: disabled
+2024-06-09 13:31:33.641 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC batch size: 15
+2024-06-09 13:31:33.641 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC batch updates for versioned data: enabled
+2024-06-09 13:31:33.641 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Scrollable result sets: enabled
+2024-06-09 13:31:33.641 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Wrap result sets: disabled
+2024-06-09 13:31:33.641 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC3 getGeneratedKeys(): enabled
+2024-06-09 13:31:33.641 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC result set fetch size: null
+2024-06-09 13:31:33.641 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Connection release mode: ON_CLOSE
+2024-06-09 13:31:33.642 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : Generate SQL with comments: disabled
+2024-06-09 13:31:33.642 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - query : disabled
+2024-06-09 13:31:33.642 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - closed-handling : disabled
+2024-06-09 13:31:33.643 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - lists : disabled
+2024-06-09 13:31:33.643 DEBUG 19884 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - transactions : disabled
+2024-06-09 13:31:33.782 DEBUG 19884 --- [restartedMain] .h.s.i.SessionFactoryServiceRegistryImpl : EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-06-09 13:31:33.783 DEBUG 19884 --- [restartedMain] .h.s.i.SessionFactoryServiceRegistryImpl : EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-06-09 13:31:33.802 DEBUG 19884 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : {}
+2024-06-09 13:31:33.803 DEBUG 19884 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: {hibernate.id.new_generator_mappings=true, java.specification.version=18, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@25e33ed1, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Users\moises dev\Documents\gestor\Andres-Carnes-release\moiso\target\classes;C:\Users\moises dev\.m2\repository\org\springframework\retry\spring-retry\1.3.3\spring-retry-1.3.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.7.3\spring-boot-starter-aop-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter\2.7.3\spring-boot-starter-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.7.3\spring-boot-starter-logging-2.7.3.jar;C:\Users\moises dev\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\moises dev\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\moises dev\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.2\log4j-to-slf4j-2.17.2.jar;C:\Users\moises dev\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\moises dev\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\moises dev\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-aop\5.3.22\spring-aop-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-beans\5.3.22\spring-beans-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-data-jdbc\2.7.3\spring-boot-starter-data-jdbc-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.7.3\spring-boot-starter-jdbc-2.7.3.jar;C:\Users\moises dev\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-jdbc\5.3.22\spring-jdbc-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\data\spring-data-jdbc\2.4.2\spring-data-jdbc-2.4.2.jar;C:\Users\moises dev\.m2\repository\org\springframework\data\spring-data-relational\2.4.2\spring-data-relational-2.4.2.jar;C:\Users\moises dev\.m2\repository\org\springframework\data\spring-data-commons\2.7.2\spring-data-commons-2.7.2.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-tx\5.3.22\spring-tx-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-context\5.3.22\spring-context-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.7.3\spring-boot-starter-data-jpa-2.7.3.jar;C:\Users\moises dev\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\moises dev\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\moises dev\.m2\repository\org\hibernate\hibernate-core\5.6.10.Final\hibernate-core-5.6.10.Final.jar;C:\Users\moises dev\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\moises dev\.m2\repository\net\bytebuddy\byte-buddy\1.12.13\byte-buddy-1.12.13.jar;C:\Users\moises dev\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\moises dev\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\moises dev\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\moises dev\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\moises dev\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.6\jaxb-runtime-2.3.6.jar;C:\Users\moises dev\.m2\repository\org\glassfish\jaxb\txw2\2.3.6\txw2-2.3.6.jar;C:\Users\moises dev\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\moises dev\.m2\repository\org\springframework\data\spring-data-jpa\2.7.2\spring-data-jpa-2.7.2.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-orm\5.3.22\spring-orm-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-aspects\5.3.22\spring-aspects-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\2.7.3\spring-boot-starter-thymeleaf-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\thymeleaf\thymeleaf-spring5\3.0.15.RELEASE\thymeleaf-spring5-3.0.15.RELEASE.jar;C:\Users\moises dev\.m2\repository\org\thymeleaf\thymeleaf\3.0.15.RELEASE\thymeleaf-3.0.15.RELEASE.jar;C:\Users\moises dev\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\moises dev\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\moises dev\.m2\repository\org\thymeleaf\extras\thymeleaf-extras-java8time\3.0.4.RELEASE\thymeleaf-extras-java8time-3.0.4.RELEASE.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.7.3\spring-boot-starter-web-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.7.3\spring-boot-starter-json-2.7.3.jar;C:\Users\moises dev\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.3\jackson-databind-2.13.3.jar;C:\Users\moises dev\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.3\jackson-annotations-2.13.3.jar;C:\Users\moises dev\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.3\jackson-core-2.13.3.jar;C:\Users\moises dev\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.3\jackson-datatype-jdk8-2.13.3.jar;C:\Users\moises dev\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.3\jackson-datatype-jsr310-2.13.3.jar;C:\Users\moises dev\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.3\jackson-module-parameter-names-2.13.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.7.3\spring-boot-starter-tomcat-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.65\tomcat-embed-core-9.0.65.jar;C:\Users\moises dev\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.65\tomcat-embed-el-9.0.65.jar;C:\Users\moises dev\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.65\tomcat-embed-websocket-9.0.65.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-web\5.3.22\spring-web-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-webmvc\5.3.22\spring-webmvc-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-expression\5.3.22\spring-expression-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-web-services\2.7.3\spring-boot-starter-web-services-2.7.3.jar;C:\Users\moises dev\.m2\repository\com\sun\xml\messaging\saaj\saaj-impl\1.5.3\saaj-impl-1.5.3.jar;C:\Users\moises dev\.m2\repository\jakarta\xml\soap\jakarta.xml.soap-api\1.4.2\jakarta.xml.soap-api-1.4.2.jar;C:\Users\moises dev\.m2\repository\org\jvnet\staxex\stax-ex\1.8.3\stax-ex-1.8.3.jar;C:\Users\moises dev\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\moises dev\.m2\repository\jakarta\xml\ws\jakarta.xml.ws-api\2.3.3\jakarta.xml.ws-api-2.3.3.jar;C:\Users\moises dev\.m2\repository\jakarta\jws\jakarta.jws-api\2.1.0\jakarta.jws-api-2.1.0.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-oxm\5.3.22\spring-oxm-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\ws\spring-ws-core\3.1.3\spring-ws-core-3.1.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\ws\spring-xml\3.1.3\spring-xml-3.1.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-devtools\2.7.3\spring-boot-devtools-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot\2.7.3\spring-boot-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.7.3\spring-boot-autoconfigure-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\postgresql\postgresql\42.3.6\postgresql-42.3.6.jar;C:\Users\moises dev\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\moises dev\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;C:\Users\moises dev\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\moises dev\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-core\5.3.22\spring-core-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\spring-jcl\5.3.22\spring-jcl-5.3.22.jar;C:\Users\moises dev\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.7.3\spring-boot-starter-security-2.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\security\spring-security-config\5.7.3\spring-security-config-5.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\security\spring-security-core\5.7.3\spring-security-core-5.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\security\spring-security-crypto\5.7.3\spring-security-crypto-5.7.3.jar;C:\Users\moises dev\.m2\repository\org\springframework\security\spring-security-web\5.7.3\spring-security-web-5.7.3.jar;C:\Users\moises dev\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\moises dev\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\moises dev\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\moises dev\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\moises dev\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\moises dev\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\moises dev\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\moises dev\.m2\repository\org\apache\poi\poi-ooxml\5.2.2\poi-ooxml-5.2.2.jar;C:\Users\moises dev\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.2\poi-ooxml-lite-5.2.2.jar;C:\Users\moises dev\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\moises dev\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\moises dev\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, catalina.useNaming=false, user.timezone=America/Bogota, jakarta.persistence.sharedCache.mode=UNSPECIFIED, java.vm.specification.version=18, os.name=Windows 11, javax.persistence.validation.mode=AUTO, jakarta.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), sun.java.launcher=SUN_STANDARD, user.country=CO, sun.boot.library.path=C:\Program Files\Java\jdk-18.0.2.1\bin, sun.java.command=mvc.moiso.MoisoApplication, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@2240ab18, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\moises dev, user.language=es, sun.stderr.encoding=UTF-8, java.specification.vendor=Oracle Corporation, java.version.date=2022-08-18, java.home=C:\Program Files\Java\jdk-18.0.2.1, file.separator=\, java.vm.compressedOopsMode=Zero based, sun.stdout.encoding=UTF-8, line.separator=
+, hibernate.persistenceUnitName=default, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, jakarta.persistence.validation.mode=AUTO, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=18.0.2.1+1-1, user.name=moises dev, path.separator=;, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, LOG_FILE=logs/mi-aplicacion.log, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\MOISES~1\AppData\Local\Temp\, catalina.home=C:\Users\moises dev\AppData\Local\Temp\tomcat.8080.2627812296975551247, java.version=18.0.2.1, hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy, user.dir=C:\Users\moises dev\Documents\gestor\Andres-Carnes-release\moiso, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=19884, sun.os.patch.level=, CONSOLE_LOG_CHARSET=UTF-8, catalina.base=C:\Users\moises dev\AppData\Local\Temp\tomcat.8080.2627812296975551247, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@1754d63e, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\moises dev\AppData\Local\Microsoft\WindowsApps;C:\Users\moises dev\AppData\Local\Programs\Microsoft VS Code\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=18.0.2.1+1-1, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), java.class.version=62.0}
+2024-06-09 13:31:33.832 DEBUG 19884 --- [restartedMain] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled
+2024-06-09 13:31:33.834 DEBUG 19884 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory
+2024-06-09 13:31:33.834 DEBUG 19884 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3f4f3eee] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6eacaad9]
+2024-06-09 13:31:33.961 DEBUG 19884 --- [restartedMain] org.hibernate.orm.bytecode.interceptor   : To-one property `mvc.moiso.modelos.Movimiento#usuario` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024-06-09 13:31:33.965 DEBUG 19884 --- [restartedMain] org.hibernate.orm.bytecode.interceptor   : To-one property `mvc.moiso.modelos.Movimiento#usuario` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024-06-09 13:31:33.965 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [mvc.moiso.modelos.Movimiento] is safe
+2024-06-09 13:31:33.965 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mvc.moiso.modelos.Movimiento
+2024-06-09 13:31:34.281 DEBUG 19884 --- [restartedMain] org.hibernate.orm.bytecode.interceptor   : To-one property `mvc.moiso.modelos.Movimiento#usuario` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024-06-09 13:31:34.281 DEBUG 19884 --- [restartedMain] org.hibernate.orm.bytecode.interceptor   : To-one property `mvc.moiso.modelos.Movimiento#usuario` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024-06-09 13:31:34.285 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [mvc.moiso.modelos.Empresa] is safe
+2024-06-09 13:31:34.285 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mvc.moiso.modelos.Empresa
+2024-06-09 13:31:34.302 DEBUG 19884 --- [restartedMain] org.hibernate.orm.bytecode.interceptor   : To-one property `mvc.moiso.modelos.Empleado#empresa` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024-06-09 13:31:34.302 DEBUG 19884 --- [restartedMain] org.hibernate.orm.bytecode.interceptor   : To-one property `mvc.moiso.modelos.Empleado#empresa` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024-06-09 13:31:34.302 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [mvc.moiso.modelos.Empleado] is safe
+2024-06-09 13:31:34.302 DEBUG 19884 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : mvc.moiso.modelos.Empleado
+2024-06-09 13:31:34.319 DEBUG 19884 --- [restartedMain] org.hibernate.orm.bytecode.interceptor   : To-one property `mvc.moiso.modelos.Empleado#empresa` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024-06-09 13:31:34.320 DEBUG 19884 --- [restartedMain] org.hibernate.orm.bytecode.interceptor   : To-one property `mvc.moiso.modelos.Empleado#empresa` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2024-06-09 13:31:34.329 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: mvc.moiso.modelos.Movimiento
+2024-06-09 13:31:34.329 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from movimientos where id =?
+2024-06-09 13:31:34.329 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select movimiento_.id, movimiento_.concepto as concepto2_2_, movimiento_.fecha as fecha3_2_, movimiento_.monto as monto4_2_, movimiento_.empleado_id as empleado5_2_ from movimientos movimiento_ where movimiento_.id=?
+2024-06-09 13:31:34.329 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into movimientos (concepto, fecha, monto, empleado_id, id) values (?, ?, ?, ?, ?)
+2024-06-09 13:31:34.329 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update movimientos set concepto=?, fecha=?, monto=?, empleado_id=? where id=?
+2024-06-09 13:31:34.329 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from movimientos where id=?
+2024-06-09 13:31:34.370 DEBUG 19884 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3cce748c]
+2024-06-09 13:31:34.371 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : concepto
+2024-06-09 13:31:34.371 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : fecha
+2024-06-09 13:31:34.371 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : monto
+2024-06-09 13:31:34.371 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario
+2024-06-09 13:31:34.374 DEBUG 19884 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@15106847]
+2024-06-09 13:31:34.376 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.correo
+2024-06-09 13:31:34.376 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.empresa
+2024-06-09 13:31:34.376 DEBUG 19884 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d8f83b2]
+2024-06-09 13:31:34.376 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.empresa.NIT
+2024-06-09 13:31:34.376 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.empresa.direccion
+2024-06-09 13:31:34.376 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.empresa.nombre
+2024-06-09 13:31:34.376 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.empresa.telefono
+2024-06-09 13:31:34.377 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.estado
+2024-06-09 13:31:34.377 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.nombre
+2024-06-09 13:31:34.377 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.password
+2024-06-09 13:31:34.377 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : usuario.rol
+2024-06-09 13:31:34.377 DEBUG 19884 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2024-06-09 13:31:34.387 DEBUG 19884 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2024-06-09 13:31:34.390 DEBUG 19884 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=mvc.moiso.modelos.Movimiento)
+    - Returns
+       - EntityReturnImpl(entity=mvc.moiso.modelos.Movimiento, querySpaceUid=<gen:0>, path=mvc.moiso.modelos.Movimiento)
+          - EntityAttributeFetchImpl(entity=mvc.moiso.modelos.Empleado, querySpaceUid=<gen:1>, path=mvc.moiso.modelos.Movimiento.usuario)
+             - EntityAttributeFetchImpl(entity=mvc.moiso.modelos.Empresa, querySpaceUid=<gen:2>, path=mvc.moiso.modelos.Movimiento.usuario.empresa)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=mvc.moiso.modelos.Movimiento)
+          - SQL table alias mapping - movimiento0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(usuario)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=mvc.moiso.modelos.Empleado)
+                - SQL table alias mapping - empleado1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+                - JOIN (JoinDefinedByMetadata(empresa)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=mvc.moiso.modelos.Empresa)
+                      - SQL table alias mapping - empresa2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_1_2_}
+
+2024-06-09 13:31:34.393 DEBUG 19884 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity mvc.moiso.modelos.Movimiento [NONE]: select movimiento0_.id as id1_2_0_, movimiento0_.concepto as concepto2_2_0_, movimiento0_.fecha as fecha3_2_0_, movimiento0_.monto as monto4_2_0_, movimiento0_.empleado_id as empleado5_2_0_, empleado1_.id as id1_0_1_, empleado1_.correo as correo2_0_1_, empleado1_.empresa_id as empresa_7_0_1_, empleado1_.estado as estado3_0_1_, empleado1_.nombre as nombre4_0_1_, empleado1_.password as password5_0_1_, empleado1_.rol as rol6_0_1_, empresa2_.id as id1_1_2_, empresa2_.nit as nit2_1_2_, empresa2_.direccion as direccio3_1_2_, empresa2_.nombre as nombre4_1_2_, empresa2_.telefono as telefono5_1_2_ from movimientos movimiento0_ left outer join empleados empleado1_ on movimiento0_.empleado_id=empleado1_.id left outer join empresa empresa2_ on empleado1_.empresa_id=empresa2_.id where movimiento0_.id=?
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: mvc.moiso.modelos.Empresa
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from empresa where id =?
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select empresa_.id, empresa_.nit as nit2_1_, empresa_.direccion as direccio3_1_, empresa_.nombre as nombre4_1_, empresa_.telefono as telefono5_1_ from empresa empresa_ where empresa_.id=?
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into empresa (nit, direccion, nombre, telefono, id) values (?, ?, ?, ?, ?)
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update empresa set nit=?, direccion=?, nombre=?, telefono=? where id=?
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from empresa where id=?
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@595a27d2]
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : NIT
+2024-06-09 13:31:34.394 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : direccion
+2024-06-09 13:31:34.395 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : nombre
+2024-06-09 13:31:34.395 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : telefono
+2024-06-09 13:31:34.395 DEBUG 19884 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2024-06-09 13:31:34.395 DEBUG 19884 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2024-06-09 13:31:34.395 DEBUG 19884 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=mvc.moiso.modelos.Empresa)
+    - Returns
+       - EntityReturnImpl(entity=mvc.moiso.modelos.Empresa, querySpaceUid=<gen:0>, path=mvc.moiso.modelos.Empresa)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=mvc.moiso.modelos.Empresa)
+          - SQL table alias mapping - empresa0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2024-06-09 13:31:34.395 DEBUG 19884 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity mvc.moiso.modelos.Empresa [NONE]: select empresa0_.id as id1_1_0_, empresa0_.nit as nit2_1_0_, empresa0_.direccion as direccio3_1_0_, empresa0_.nombre as nombre4_1_0_, empresa0_.telefono as telefono5_1_0_ from empresa empresa0_ where empresa0_.id=?
+2024-06-09 13:31:34.395 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: mvc.moiso.modelos.Empleado
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from empleados where id =?
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select empleado_.id, empleado_.correo as correo2_0_, empleado_.empresa_id as empresa_7_0_, empleado_.estado as estado3_0_, empleado_.nombre as nombre4_0_, empleado_.password as password5_0_, empleado_.rol as rol6_0_ from empleados empleado_ where empleado_.id=?
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into empleados (correo, empresa_id, estado, nombre, password, rol, id) values (?, ?, ?, ?, ?, ?, ?)
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update empleados set correo=?, empresa_id=?, estado=?, nombre=?, password=?, rol=? where id=?
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from empleados where id=?
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@17598c79]
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : correo
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : empresa
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@244a88a1]
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : empresa.NIT
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : empresa.direccion
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : empresa.nombre
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : empresa.telefono
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : estado
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : nombre
+2024-06-09 13:31:34.396 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2024-06-09 13:31:34.397 DEBUG 19884 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rol
+2024-06-09 13:31:34.397 DEBUG 19884 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2024-06-09 13:31:34.397 DEBUG 19884 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2024-06-09 13:31:34.397 DEBUG 19884 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=mvc.moiso.modelos.Empleado)
+    - Returns
+       - EntityReturnImpl(entity=mvc.moiso.modelos.Empleado, querySpaceUid=<gen:0>, path=mvc.moiso.modelos.Empleado)
+          - EntityAttributeFetchImpl(entity=mvc.moiso.modelos.Empresa, querySpaceUid=<gen:1>, path=mvc.moiso.modelos.Empleado.empresa)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=mvc.moiso.modelos.Empleado)
+          - SQL table alias mapping - empleado0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(empresa)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=mvc.moiso.modelos.Empresa)
+                - SQL table alias mapping - empresa1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+2024-06-09 13:31:34.397 DEBUG 19884 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity mvc.moiso.modelos.Empleado [NONE]: select empleado0_.id as id1_0_0_, empleado0_.correo as correo2_0_0_, empleado0_.empresa_id as empresa_7_0_0_, empleado0_.estado as estado3_0_0_, empleado0_.nombre as nombre4_0_0_, empleado0_.password as password5_0_0_, empleado0_.rol as rol6_0_0_, empresa1_.id as id1_1_1_, empresa1_.nit as nit2_1_1_, empresa1_.direccion as direccio3_1_1_, empresa1_.nombre as nombre4_1_1_, empresa1_.telefono as telefono5_1_1_ from empleados empleado0_ left outer join empresa empresa1_ on empleado0_.empresa_id=empresa1_.id where empleado0_.id=?
+2024-06-09 13:31:34.492 DEBUG 19884 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@98908bc
+2024-06-09 13:31:35.070 DEBUG 19884 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : empleados
+2024-06-09 13:31:35.071 DEBUG 19884 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : empresa
+2024-06-09 13:31:35.071 DEBUG 19884 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : movimientos
+2024-06-09 13:31:36.017 DEBUG 19884 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74ee7fd
+2024-06-09 13:31:36.480  INFO 19884 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-09 13:31:36.481 DEBUG 19884 --- [restartedMain] o.h.query.spi.NamedQueryRepository       : Checking 0 named HQL queries
+2024-06-09 13:31:36.481 DEBUG 19884 --- [restartedMain] o.h.query.spi.NamedQueryRepository       : Checking 0 named SQL queries
+2024-06-09 13:31:36.498 DEBUG 19884 --- [restartedMain] .h.s.i.SessionFactoryServiceRegistryImpl : EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-06-09 13:31:36.505 DEBUG 19884 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@20697b92
+2024-06-09 13:31:36.505 DEBUG 19884 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: 1cd498ee-bd9c-4ffe-bdcd-1eca72e44b20 (<unnamed>)
+2024-06-09 13:31:36.506 DEBUG 19884 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured
+2024-06-09 13:31:36.506  INFO 19884 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-09 13:31:36.763 DEBUG 19884 --- [restartedMain] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2024-06-09 13:31:37.038 DEBUG 19884 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-06-09 13:31:37.098 DEBUG 19884 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-06-09 13:31:37.100 DEBUG 19884 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-06-09 13:31:37.106 DEBUG 19884 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-06-09 13:31:37.108 DEBUG 19884 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-06-09 13:31:37.111 DEBUG 19884 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-06-09 13:31:37.113 DEBUG 19884 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-06-09 13:31:37.209  WARN 19884 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-09 13:31:37.498  INFO 19884 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6264b377, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@791bc8fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@33c46431, org.springframework.security.web.header.HeaderWriterFilter@11b21dc6, org.springframework.security.web.csrf.CsrfFilter@645d6be7, org.springframework.security.web.authentication.logout.LogoutFilter@529b37a4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5cf609fc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d1d80b4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2108514c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ab6f863, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@88a1276, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@202da39b, org.springframework.security.web.session.SessionManagementFilter@7c289340, org.springframework.security.web.access.ExceptionTranslationFilter@29d19810, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ce2f914]
+2024-06-09 13:31:37.517 DEBUG 19884 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37163cc
+2024-06-09 13:31:37.756  INFO 19884 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-06-09 13:31:38.370  INFO 19884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-09 13:31:38.474  INFO 19884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-09 13:31:38.489  INFO 19884 --- [restartedMain] mvc.moiso.MoisoApplication               : Started MoisoApplication in 12.485 seconds (JVM running for 13.314)
+2024-06-09 13:31:39.045 DEBUG 19884 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4673edc6
+2024-06-09 13:31:46.773  INFO 19884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-09 13:31:46.773  INFO 19884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-09 13:31:46.774  INFO 19884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-09 13:31:59.780 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-06-09 13:31:59.780 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : begin
+2024-06-09 13:31:59.813 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Empleado as generatedAlias0
+2024-06-09 13:31:59.837 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@709379fe
+2024-06-09 13:31:59.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.h.internal.ast.QueryTranslatorImpl   : parse() - HQL: select generatedAlias0 from mvc.moiso.modelos.Empleado as generatedAlias0
+2024-06-09 13:31:59.882 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2024-06-09 13:31:59.897 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.h.internal.ast.QueryTranslatorImpl   : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'mvc'
+       |     |  |  |  \-[IDENT] Node: 'moiso'
+       |     |  |  \-[IDENT] Node: 'modelos'
+       |     |  \-[IDENT] Node: 'Empleado'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+2024-06-09 13:31:59.935 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select << begin [level=1, statement=select]
+2024-06-09 13:31:59.952 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.ast.tree.FromElement    : FromClause{level=1} : mvc.moiso.modelos.Empleado (generatedAlias0) -> empleado0_
+2024-06-09 13:31:59.952 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0 -> empleado0_.id
+2024-06-09 13:31:59.956 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select : finishing up [level=1, statement=select]
+2024-06-09 13:31:59.956 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.ast.HqlSqlWalker        : processQuery() :  ( SELECT ( {select clause} empleado0_.id ) ( FromClause{level=1} empleados empleado0_ ) )
+2024-06-09 13:31:59.963 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.ast.util.JoinProcessor  : Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Empleado): [empleados]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(mvc.moiso.modelos.Empleado)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+2024-06-09 13:31:59.968 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.ast.util.JoinProcessor  : Using FROM fragment [empleados empleado0_]
+2024-06-09 13:31:59.972 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select >> end [level=1, statement=select]
+2024-06-09 13:31:59.972 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.h.internal.ast.QueryTranslatorImpl   : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (empleados)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'empleado0_.id as id1_0_' {alias=generatedAlias0, className=mvc.moiso.modelos.Empleado, tableAlias=empleado0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'empleado0_.correo as correo2_0_, empleado0_.empresa_id as empresa_7_0_, empleado0_.estado as estado3_0_, empleado0_.nombre as nombre4_0_, empleado0_.password as password5_0_, empleado0_.rol as rol6_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[empleado0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'empleados empleado0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=empleados,tableAlias=empleado0_,origin=null,columns={,className=mvc.moiso.modelos.Empleado}}
+
+2024-06-09 13:31:59.972 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2024-06-09 13:31:59.982 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.h.internal.ast.QueryTranslatorImpl   : HQL: select generatedAlias0 from mvc.moiso.modelos.Empleado as generatedAlias0
+2024-06-09 13:31:59.982 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.h.internal.ast.QueryTranslatorImpl   : SQL: select empleado0_.id as id1_0_, empleado0_.correo as correo2_0_, empleado0_.empresa_id as empresa_7_0_, empleado0_.estado as estado3_0_, empleado0_.nombre as nombre4_0_, empleado0_.password as password5_0_, empleado0_.rol as rol6_0_ from empleados empleado0_
+2024-06-09 13:31:59.982 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2024-06-09 13:32:00.060 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select empleado0_.id as id1_0_, empleado0_.correo as correo2_0_, empleado0_.empresa_id as empresa_7_0_, empleado0_.estado as estado3_0_, empleado0_.nombre as nombre4_0_, empleado0_.password as password5_0_, empleado0_.rol as rol6_0_ from empleados empleado0_
+2024-06-09 13:32:00.212 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 0
+2024-06-09 13:32:00.214 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [2]
+2024-06-09 13:32:00.214 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[mvc.moiso.modelos.Empleado#2]
+2024-06-09 13:32:00.230 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([correo2_0_] : [VARCHAR]) - [2678468@tcs.com]
+2024-06-09 13:32:00.230 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([empresa_7_0_] : [INTEGER]) - [1]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([estado3_0_] : [BOOLEAN]) - [true]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_0_] : [VARCHAR]) - [David Castro]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [$2a$10$xRMJJFfsrkS5iLx2CziXS.6oyGf23Mvy2KWWDDGG2ZUYaxWtnJsfi]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rol6_0_] : [VARCHAR]) - [ROLE_ADMIN]
+2024-06-09 13:32:00.232 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 1
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [5]
+2024-06-09 13:32:00.232 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[mvc.moiso.modelos.Empleado#5]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([correo2_0_] : [VARCHAR]) - [anais@talana.com]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([empresa_7_0_] : [INTEGER]) - [4]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([estado3_0_] : [BOOLEAN]) - [true]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_0_] : [VARCHAR]) - [Anaís]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [$2a$10$QIlGMTL1wtYxbElQRJIYqOgL3t9ET8UxsVK2JC7r3XkblMxgbTWq2]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rol6_0_] : [VARCHAR]) - [ROLE_USER]
+2024-06-09 13:32:00.232 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 2
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [9]
+2024-06-09 13:32:00.232 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[mvc.moiso.modelos.Empleado#9]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([correo2_0_] : [VARCHAR]) - [angelica@correo.com]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([empresa_7_0_] : [INTEGER]) - [8]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([estado3_0_] : [BOOLEAN]) - [true]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_0_] : [VARCHAR]) - [ANGELICA]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [$2a$10$Vk/Hsd6pY5s7VZLZMNruVupo57MwGEKm2HUjLFSYeHz4e.QxsnAEq]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rol6_0_] : [VARCHAR]) - [ROLE_USER]
+2024-06-09 13:32:00.232 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 3
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [15]
+2024-06-09 13:32:00.232 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[mvc.moiso.modelos.Empleado#15]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([correo2_0_] : [VARCHAR]) - [jaz@talana.com]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([empresa_7_0_] : [INTEGER]) - [4]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([estado3_0_] : [BOOLEAN]) - [true]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_0_] : [VARCHAR]) - [Jaz Gargía ]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [$2a$10$loqmZWB0MLMgZfE/oml4keaMzYe6XiB4YIoR3caMmrVeC0fKF.FJC]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rol6_0_] : [VARCHAR]) - [ROLE_ADMIN]
+2024-06-09 13:32:00.232 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 4
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [18]
+2024-06-09 13:32:00.232 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[mvc.moiso.modelos.Empleado#18]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([correo2_0_] : [VARCHAR]) - [ed@correo.com]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([empresa_7_0_] : [INTEGER]) - [4]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([estado3_0_] : [BOOLEAN]) - [false]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_0_] : [VARCHAR]) - [Edwin Perez]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [$2a$10$PV27XYA.RKnAss.sr.7..O6qgZWIcQVX10owX3CLBpRlrKiMIEjSm]
+2024-06-09 13:32:00.232 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rol6_0_] : [VARCHAR]) - [ROLE_ADMIN]
+2024-06-09 13:32:00.239 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 5
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [22]
+2024-06-09 13:32:00.239 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[mvc.moiso.modelos.Empleado#22]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([correo2_0_] : [VARCHAR]) - [vio@correo.com]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([empresa_7_0_] : [INTEGER]) - [1]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([estado3_0_] : [BOOLEAN]) - [true]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_0_] : [VARCHAR]) - [Violeta Castro]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [$2a$10$DbaIrtxHMWo7WV4DVe9fteGvCb0W28EWVoHQSMxSY2D3dwZXT5i.e]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rol6_0_] : [VARCHAR]) - [ROLE_USER]
+2024-06-09 13:32:00.239 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 6
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_0_] : [INTEGER]) - [23]
+2024-06-09 13:32:00.239 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[mvc.moiso.modelos.Empleado#23]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([correo2_0_] : [VARCHAR]) - [mapicama@correo.com]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([empresa_7_0_] : [INTEGER]) - [11]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([estado3_0_] : [BOOLEAN]) - [true]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_0_] : [VARCHAR]) - [Maria Castro]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password5_0_] : [VARCHAR]) - [$2a$10$B8s7yRLsa.odsQbAoX/3D.oV74RvOBUiUt3dnQMZ.IWovxGc0qHAC]
+2024-06-09 13:32:00.239 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([rol6_0_] : [VARCHAR]) - [ROLE_ADMIN]
+2024-06-09 13:32:00.242 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empleado#2]
+2024-06-09 13:32:00.242 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `correo` : value = 2678468@tcs.com
+2024-06-09 13:32:00.242 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`correo`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.242 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `empresa` : value = 1
+2024-06-09 13:32:00.247 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`empresa`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.252 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select empresa0_.id as id1_1_0_, empresa0_.nit as nit2_1_0_, empresa0_.direccion as direccio3_1_0_, empresa0_.nombre as nombre4_1_0_, empresa0_.telefono as telefono5_1_0_ from empresa empresa0_ where empresa0_.id=?
+2024-06-09 13:32:00.255 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2024-06-09 13:32:00.412 DEBUG 19884 --- [http-nio-8080-exec-7] l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2024-06-09 13:32:00.412 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nit2_1_0_] : [VARCHAR]) - [123456]
+2024-06-09 13:32:00.412 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([direccio3_1_0_] : [VARCHAR]) - [BOGOTA]
+2024-06-09 13:32:00.412 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_1_0_] : [VARCHAR]) - [TCS]
+2024-06-09 13:32:00.412 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([telefono5_1_0_] : [VARCHAR]) - [987456]
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empresa#1]
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `NIT` : value = 123456
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`NIT`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `direccion` : value = BOGOTA
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`direccion`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = TCS
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `telefono` : value = 987456
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`telefono`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empresa#1]
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] .l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : mvc.moiso.modelos.Empresa#1
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `estado` : value = true
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`estado`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = David Castro
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `password` : value = $2a$10$xRMJJFfsrkS5iLx2CziXS.6oyGf23Mvy2KWWDDGG2ZUYaxWtnJsfi
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `rol` : value = ROLE_ADMIN
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`rol`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empleado#2]
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empleado#5]
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `correo` : value = anais@talana.com
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`correo`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `empresa` : value = 4
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`empresa`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.415 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select empresa0_.id as id1_1_0_, empresa0_.nit as nit2_1_0_, empresa0_.direccion as direccio3_1_0_, empresa0_.nombre as nombre4_1_0_, empresa0_.telefono as telefono5_1_0_ from empresa empresa0_ where empresa0_.id=?
+2024-06-09 13:32:00.415 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [4]
+2024-06-09 13:32:00.564 DEBUG 19884 --- [http-nio-8080-exec-7] l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2024-06-09 13:32:00.564 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nit2_1_0_] : [VARCHAR]) - [789-56]
+2024-06-09 13:32:00.564 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([direccio3_1_0_] : [VARCHAR]) - [Chile ]
+2024-06-09 13:32:00.564 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_1_0_] : [VARCHAR]) - [Talana ]
+2024-06-09 13:32:00.564 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([telefono5_1_0_] : [VARCHAR]) - [0000000]
+2024-06-09 13:32:00.564 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empresa#4]
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `NIT` : value = 789-56
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`NIT`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `direccion` : value = Chile 
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`direccion`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = Talana 
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `telefono` : value = 0000000
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`telefono`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empresa#4]
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] .l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : mvc.moiso.modelos.Empresa#4
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `estado` : value = true
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`estado`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = Anaís
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `password` : value = $2a$10$QIlGMTL1wtYxbElQRJIYqOgL3t9ET8UxsVK2JC7r3XkblMxgbTWq2
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `rol` : value = ROLE_USER
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`rol`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empleado#5]
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empleado#9]
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `correo` : value = angelica@correo.com
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`correo`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `empresa` : value = 8
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`empresa`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.570 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select empresa0_.id as id1_1_0_, empresa0_.nit as nit2_1_0_, empresa0_.direccion as direccio3_1_0_, empresa0_.nombre as nombre4_1_0_, empresa0_.telefono as telefono5_1_0_ from empresa empresa0_ where empresa0_.id=?
+2024-06-09 13:32:00.570 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [8]
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2024-06-09 13:32:00.715 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nit2_1_0_] : [VARCHAR]) - [987456-9]
+2024-06-09 13:32:00.715 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([direccio3_1_0_] : [VARCHAR]) - [AV 42]
+2024-06-09 13:32:00.715 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_1_0_] : [VARCHAR]) - [UNAB]
+2024-06-09 13:32:00.715 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([telefono5_1_0_] : [VARCHAR]) - [63444444]
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empresa#8]
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `NIT` : value = 987456-9
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`NIT`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `direccion` : value = AV 42
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`direccion`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = UNAB
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `telefono` : value = 63444444
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`telefono`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empresa#8]
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] .l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : mvc.moiso.modelos.Empresa#8
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `estado` : value = true
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`estado`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = ANGELICA
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `password` : value = $2a$10$Vk/Hsd6pY5s7VZLZMNruVupo57MwGEKm2HUjLFSYeHz4e.QxsnAEq
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `rol` : value = ROLE_USER
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`rol`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empleado#9]
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empleado#15]
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `correo` : value = jaz@talana.com
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`correo`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `empresa` : value = 4
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`empresa`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `estado` : value = true
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`estado`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = Jaz Gargía 
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `password` : value = $2a$10$loqmZWB0MLMgZfE/oml4keaMzYe6XiB4YIoR3caMmrVeC0fKF.FJC
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `rol` : value = ROLE_ADMIN
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`rol`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empleado#15]
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empleado#18]
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `correo` : value = ed@correo.com
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`correo`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `empresa` : value = 4
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`empresa`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `estado` : value = false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`estado`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = Edwin Perez
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `password` : value = $2a$10$PV27XYA.RKnAss.sr.7..O6qgZWIcQVX10owX3CLBpRlrKiMIEjSm
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.715 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `rol` : value = ROLE_ADMIN
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`rol`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empleado#18]
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empleado#22]
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `correo` : value = vio@correo.com
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`correo`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `empresa` : value = 1
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`empresa`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `estado` : value = true
+2024-06-09 13:32:00.722 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`estado`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = Violeta Castro
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `password` : value = $2a$10$DbaIrtxHMWo7WV4DVe9fteGvCb0W28EWVoHQSMxSY2D3dwZXT5i.e
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `rol` : value = ROLE_USER
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`rol`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empleado#22]
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empleado#23]
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `correo` : value = mapicama@correo.com
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`correo`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.723 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `empresa` : value = 11
+2024-06-09 13:32:00.724 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`empresa`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.724 DEBUG 19884 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select empresa0_.id as id1_1_0_, empresa0_.nit as nit2_1_0_, empresa0_.direccion as direccio3_1_0_, empresa0_.nombre as nombre4_1_0_, empresa0_.telefono as telefono5_1_0_ from empresa empresa0_ where empresa0_.id=?
+2024-06-09 13:32:00.724 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [11]
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2024-06-09 13:32:00.872 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nit2_1_0_] : [VARCHAR]) - [987456-2]
+2024-06-09 13:32:00.872 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([direccio3_1_0_] : [VARCHAR]) - [CR 27 CON CALLE 21 ]
+2024-06-09 13:32:00.872 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([nombre4_1_0_] : [VARCHAR]) - [MAS POR MENOS SUPERMERCADO]
+2024-06-09 13:32:00.872 TRACE 19884 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([telefono5_1_0_] : [VARCHAR]) - [6400000]
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving attributes for [mvc.moiso.modelos.Empresa#11]
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `NIT` : value = 987456-2
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`NIT`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `direccion` : value = CR 27 CON CALLE 21 
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`direccion`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = MAS POR MENOS SUPERMERCADO
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `telefono` : value = 6400000
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`telefono`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empresa#11]
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] .l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : mvc.moiso.modelos.Empresa#11
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `estado` : value = true
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`estado`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `nombre` : value = Maria Castro
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`nombre`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `password` : value = $2a$10$B8s7yRLsa.odsQbAoX/3D.oV74RvOBUiUt3dnQMZ.IWovxGc0qHAC
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Processing attribute `rol` : value = ROLE_ADMIN
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Attribute (`rol`)  - enhanced for lazy-loading? - false
+2024-06-09 13:32:00.872 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [mvc.moiso.modelos.Empleado#23]
+2024-06-09 13:32:00.879 DEBUG 19884 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : committing
+2024-06-09 13:32:02.969 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:32:02.969 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:32:02.972 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-09 13:32:32.982 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:32:32.982 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:32:32.982 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-09 13:33:02.983 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:33:02.984 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:33:02.984 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-09 13:33:32.990 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:33:32.990 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:33:32.990 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-09 13:34:03.002 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:34:03.003 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:34:03.003 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-09 13:34:33.016 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:34:33.017 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:34:33.017 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-09 13:35:03.021 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:35:03.030 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:35:03.031 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-09 13:35:33.046 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-09 13:35:33.047 DEBUG 19884 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
