@@ -12984,3 +12984,15 @@ org.springframework.expression.spel.SpelEvaluationException: EL1004E: Method cal
 2024-06-22 16:19:04.536 DEBUG 19224 --- [http-nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 0
 2024-06-22 16:19:04.536 DEBUG 19224 --- [http-nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: 
 2024-06-22 16:19:04.545 TRACE 19224 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([sum] : [NUMERIC]) - [2397000]
+2024-06-22 16:19:21.716 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-22 16:19:21.717 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-22 16:19:21.717 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-22 16:19:51.719 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-22 16:19:51.720 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-22 16:19:51.720 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-22 16:20:21.723 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-22 16:20:21.723 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-22 16:20:21.723 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2024-06-22 16:20:51.729 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2024-06-22 16:20:51.729 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2024-06-22 16:20:51.729 DEBUG 19224 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
