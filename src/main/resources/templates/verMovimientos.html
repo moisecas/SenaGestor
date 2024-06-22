@@ -40,8 +40,11 @@
             color: white;
         }
         .total-movimientos-title {
-            color: yellow; /* Cambia esto al color que prefieras */
+            color: yellow;
         }
+        #SumaMontos {
+        color: black;
+    }
     </style>
 </head>
 <body>
@@ -108,7 +111,7 @@
         <div class="form-group col-md-12">
             <label class="col-md-3 total-movimientos-title" for="SumaMontos">Total Movimientos:</label>
             <div class="col-md-6">
-                <p th:text="${#numbers.formatCurrency(SumaMontos)}" class="form-control" id="SumaMontos"></p>
+                <p th:text="${#numbers.formatCurrency(SumaMontos)}" class="form-control suma-movimientos" id="SumaMontos"></p>
             </div>
         </div>
     </div>
