@@ -37,7 +37,7 @@ public class Config extends WebSecurityConfigurerAdapter{
                 .antMatchers("/VerEmpleados/**").hasRole("ADMIN")
                 .antMatchers("/Empresa/**").hasRole("ADMIN")
                 .antMatchers("/Empleado/**").hasRole("ADMIN")
-                .antMatchers("/VerMovimientos/**").hasAnyRole("ADMIN","USER")
+                .antMatchers("/VerMovimientos/**").hasAnyRole("ADMIN")
                 .antMatchers("/AgregarMovimiento/**").hasAnyRole("ADMIN","USER")
                 .antMatchers("/AgregarEmpleado/**").hasAnyRole("ADMIN","USER")
                 .antMatchers("/EditarMovimiento/**").hasAnyRole("ADMIN","USER")
