@@ -18,7 +18,6 @@
     nav{
         margin-bottom: 50px;
         border-radius: 20px;
-
     }
     body {
         background: rgb(2,0,36);
@@ -30,20 +29,17 @@
     h1 {
         color: white;
         font-family: 'Times New Roman', Times, serif;
-
     }
     tr{
         color: white;
-
     }
     form {
         color: white;
-
     }
      .container p {
     color: white;
 }
-</style>
+  </style>
 </head>
 <body>
 
@@ -54,10 +50,8 @@
       <button type="button" class="btn btn-primary"><a th:href="@{/VerEmpleados}">Empleados</a></button>
       <button type="button" class="btn btn-primary"><a th:href="@{/DeveloperTeam}">Developer Team</a></button>
       <button type="button" class="btn btn-primary"><a th:href="@{/VerMovimientos}">Movimientos</a></button>
-
     </div>
   </nav>
-
 </div>
 
 <div class="container">
@@ -66,9 +60,9 @@
   <button type="button" class="btn btn-primary"><a th:href="@{/index}">Pagina principal</a></button>
   <h1> Agregue aqui los datos del Movimiento</h1>
   <br>
-  <!--Crear formulario para llenar los datos del movimiento y guardarlo en el objeto mov -->
-  <form th:action="@{/GuardarMovimiento}" th:object="${mov}" method="post">
-    <!--Campo para Concepto-->
+
+  <form th:action="@{/GuardarMovimiento}" th:object="${mov}" method="post" enctype="multipart/form-data">
+
     <div class="row">
       <div class="form-group col-md-12">
         <label class="col-md-3" for="concepto">Concepto del Movimiento:</label>
@@ -82,14 +76,12 @@
             <option th:value=6>Mobiliario</option>
             <option th:value=7>Maquinaria y Equipo</option>
             <option th:value=8>Nomina</option>
-
-
           </select>
         </div>
       </div>
     </div>
 
-    <!--Campo para monto-->
+
     <div class="row">
       <div class="form-group col-md-12">
         <label class="col-md-3" for="monto">Valor del movimiento:</label>
@@ -98,7 +90,7 @@
       </div>
     </div>
 
-    <!--Campo para empleado (usuario responsable)-->
+
     <div class="row">
       <div class="form-group col-md-12">
         <label class="col-md-3" for="usuario">Empleado responsable:</label>
@@ -119,10 +111,17 @@
       </div>
     </div>
 
+    <!--Campo para soporte PDF-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="soportePdf">Soporte PDF:</label>
+        <div class="col-md-6">
+          <input type="file" th:field="*{soportePdf}" class="form-control" id="soportePdf" accept="application/pdf">
+        </div>
+      </div>
+    </div>
 
 
-
-    <!--Boton para enviar todo y ejecutar accion -->
     <div class="row">
       <div class="col-md-2">
         <button class="btn btn-success">Registrar Movimiento</button>
@@ -140,7 +139,6 @@
   document.getElementById("fecha").value=new Date().toJSON().slice(0,10).replace(/-/g,'-');
   }
 </script>
-
 
 </body>
 </html>

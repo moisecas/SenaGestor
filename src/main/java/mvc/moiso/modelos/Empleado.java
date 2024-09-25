@@ -19,17 +19,19 @@ public class Empleado {
     private String rol;
     private String password;
     private Boolean estado;
+    private String imagen;
 
     public Empleado() {
     }
 
-    public Empleado(String nombre, String correo, Empresa empresa, String rol, String password, Boolean estado) {
+    public Empleado(String nombre, String correo, Empresa empresa, String rol, String password, Boolean estado, String imagen) {
         this.nombre = nombre;
         this.correo = correo;
         this.empresa = empresa;
         this.rol = rol;
         this.password= password;
         this.estado=estado;
+        this.imagen = imagen;
     }
 
     public Boolean getEstado() {
@@ -87,6 +89,15 @@ public class Empleado {
     public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
     }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
 
 }
 

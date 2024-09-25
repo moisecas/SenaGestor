@@ -13,6 +13,9 @@ public class Movimiento {
     private int id;
     private long monto;
     private String concepto;
+    @Lob
+    @Column(name="soportePdf", columnDefinition="BLOB")
+    private byte[] soportePdf;
     @ManyToOne
     @JoinColumn(name = "empleado_id")
     private Empleado usuario;
@@ -23,11 +26,12 @@ public class Movimiento {
     public Movimiento() {
     }
 
-    public Movimiento(long monto, String concepto, Empleado empleado, Date fecha) {
+    public Movimiento(long monto, String concepto, Empleado empleado, Date fecha, byte[] soportePdf) {
         this.monto = monto;
         this.concepto = concepto;
         this.usuario = empleado;
         this.fecha=fecha;
+        this.soportePdf = soportePdf;
     }
 
     public int getId() {
@@ -68,6 +72,14 @@ public class Movimiento {
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
+    }
+
+    public byte[] getSoportePdf() {
+        return soportePdf;
+    }
+
+    public void setSoportePdf(byte[] soportePdf) {
+        this.soportePdf = soportePdf;
     }
 
     public double getDescripcion() {

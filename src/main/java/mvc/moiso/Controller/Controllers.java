@@ -1,8 +1,6 @@
 package mvc.moiso.Controller;
 
-import mvc.moiso.modelos.Empleado;
-import mvc.moiso.modelos.Empresa;
-import mvc.moiso.modelos.Movimiento;
+import mvc.moiso.modelos.*;
 import mvc.moiso.repository.MovimientosRepository;
 import mvc.moiso.service.EmpleadoService;
 import mvc.moiso.service.EmpresaService;
@@ -22,13 +20,14 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import mvc.moiso.modelos.ExcelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import org.springframework.web.multipart.MultipartFile;
+
 
 
 import java.util.List;
@@ -252,14 +251,24 @@ public ResponseEntity<byte[]> descargarMovimientosExcel() throws IOException {
         return "agregarMovimiento"; //Llamar HTML
     }
 
+
     @PostMapping("/GuardarMovimiento")
-    public String guardarMovimiento(Movimiento mov, RedirectAttributes redirectAttributes){
-        if(movimientosService.saveOrUpdateMovimiento(mov)){
-            redirectAttributes.addFlashAttribute("mensaje","saveOK");
+    public String guardarMovimiento(@ModelAttribute("mov") Movimiento movimiento,
+                                    @RequestParam("soportePdf") MultipartFile soportePdf,
+                                    Model model,
+                                    RedirectAttributes redirectAttributes) {
+        try {
+            if (!soportePdf.isEmpty()) {
+                movimiento.setSoportePdf(soportePdf.getBytes()); // Guardar el archivo como byte[]
+            }
+
+            movimientosService.saveOrUpdateMovimiento(movimiento);
+            redirectAttributes.addFlashAttribute("mensaje", "Movimiento registrado exitosamente");
             return "redirect:/VerMovimientos";
+        } catch (Exception e) {
+            model.addAttribute("mensaje", "Error al registrar el movimiento: " + e.getMessage());
+            return "verMovimientos";
         }
-        redirectAttributes.addFlashAttribute("mensaje","saveError");
-        return "redirect:/AgregarMovimiento";
     }
 
     @GetMapping("/EditarMovimiento/{id}")
