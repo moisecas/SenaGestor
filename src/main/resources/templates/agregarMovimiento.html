@@ -114,12 +114,13 @@
     <!--Campo para soporte PDF-->
     <div class="row">
       <div class="form-group col-md-12">
-        <label class="col-md-3" for="soportePdf">Soporte PDF:</label>
+        <label class="col-md-3" for="soportePdfUrl">URL del Soporte PDF:</label>
         <div class="col-md-6">
-          <input type="file" th:field="*{soportePdf}" class="form-control" id="soportePdf" accept="application/pdf">
+          <input type="url" th:field="*{soportePdfUrl}" class="form-control" id="soportePdfUrl" required="required" placeholder="https://url/soporte.pdf">
         </div>
       </div>
     </div>
+
 
 
     <div class="row">

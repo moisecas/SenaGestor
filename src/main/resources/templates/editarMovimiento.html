@@ -8,42 +8,38 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    a{
-    color:white;
+    a {
+      color: white;
     }
     a:hover {
-    color: black;
-    text-decoration:none;
+      color: black;
+      text-decoration: none;
     }
-    nav{
-        margin-bottom: 50px;
-        border-radius: 20px;
-
+    nav {
+      margin-bottom: 50px;
+      border-radius: 20px;
     }
     body {
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,9,121,1) 35%, rgba(0,212,255,1) 100%);
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,9,121,1) 35%, rgba(0,212,255,1) 100%);
     }
     .container {
-        margin-top: 50px;
+      margin-top: 50px;
     }
     h1 {
-        color: white;
-        font-family: 'Times New Roman', Times, serif;
-
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
     }
-    tr{
-        color: white;
-
+    tr {
+      color: white;
     }
     form {
-        color: white;
-
+      color: white;
     }
-     .container p {
-    color: white;
-}
-</style>
+    .container p {
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
@@ -54,26 +50,27 @@
       <button type="button" class="btn btn-primary"><a th:href="@{/VerEmpleados}">Empleados</a></button>
       <button type="button" class="btn btn-primary"><a th:href="@{/DeveloperTeam}">Developer Team</a></button>
       <button type="button" class="btn btn-primary"><a th:href="@{/VerMovimientos}">Movimientos</a></button>
-
     </div>
   </nav>
-
 </div>
 
 <div class="container">
   <p th:inline="text" class="text-right">User: [[${#httpServletRequest.remoteUser}]]</p>
   <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
   <button type="button" class="btn btn-primary"><a th:href="@{/index}">Pagina principal</a></button>
-  <h1> Modifique aqui los datos del Movimiento</h1>
+  <h1> Modifique aquí los datos del Movimiento</h1>
   <br>
+
   <!--Crear formulario para cambiar los datos del movimiento y guardarlo en el objeto mov -->
   <form th:action="@{/ActualizarMovimiento}" th:object="${mov}" method="post">
+
     <!--Campo para id-->
     <div class="row">
       <div class="form-group col-md-12">
         <label class="col-md-3" for="id">ID del movimiento:</label>
         <div class="col-md-6">
-          <input type="text" th:field="*{id}" class="form-control" id="id" required="required" readonly></div>
+          <input type="text" th:field="*{id}" class="form-control" id="id" required="required" readonly>
+        </div>
       </div>
     </div>
 
@@ -83,15 +80,14 @@
         <label class="col-md-3" for="concepto">Concepto del Movimiento:</label>
         <div class="col-md-6">
           <select th:field="*{concepto}" class="form-control" id="concepto" required="required">
-            <option th:value=1>Papeleria</option>
-            <option th:value=2>Servicios Publicos/Privados</option>
+            <option th:value=1>Papelería</option>
+            <option th:value=2>Servicios Públicos/Privados</option>
             <option th:value=3>Operativos</option>
             <option th:value=4>Caja menor</option>
             <option th:value=5>Tributario</option>
             <option th:value=6>Mobiliario</option>
             <option th:value=7>Maquinaria y Equipo</option>
-            <option th:value=8>Nomina</option>
-
+            <option th:value=8>Nómina</option>
           </select>
         </div>
       </div>
@@ -102,7 +98,8 @@
       <div class="form-group col-md-12">
         <label class="col-md-3" for="monto">Valor del movimiento:</label>
         <div class="col-md-6">
-          <input type="number" th:field="*{monto}" class="form-control" id="monto" required="required"></div>
+          <input type="number" th:field="*{monto}" class="form-control" id="monto" required="required">
+        </div>
       </div>
     </div>
 
@@ -112,10 +109,10 @@
         <label class="col-md-3" for="usuario">Responsable del movimiento:</label>
         <div class="col-md-6">
           <select th:field="*{usuario}" class="form-control" id="usuario" required="required" readonly>
-            <option th:value=*{usuario.id} th:text=*{usuario.correo}></option>
+            <option th:value="*{usuario.id}" th:text="*{usuario.correo}"></option>
           </select>
+        </div>
       </div>
-    </div>
     </div>
 
     <!--Campo para fecha-->
@@ -123,13 +120,22 @@
       <div class="form-group col-md-12">
         <label class="col-md-3" for="fecha">Fecha del movimiento:</label>
         <div class="col-md-6">
-          <input type="date" th:field="*{fecha}" class="form-control" id="fecha" required="required" readonly></div>
+          <input type="date" th:field="*{fecha}" class="form-control" id="fecha" required="required" readonly>
+        </div>
       </div>
     </div>
 
+    <!--Campo para la URL del soporte PDF-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="soportePdfUrl">URL del Soporte PDF:</label>
+        <div class="col-md-6">
+          <input type="url" th:field="*{soportePdfUrl}" class="form-control" id="soportePdfUrl" placeholder="Ingrese la URL del PDF">
+        </div>
+      </div>
+    </div>
 
-
-    <!--Boton para enviar todo y ejecutar accion -->
+    <!--Botón para enviar todo y ejecutar acción -->
     <div class="row">
       <div class="col-md-2">
         <button class="btn btn-success">Actualizar Movimiento</button>

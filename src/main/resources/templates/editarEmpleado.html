@@ -43,7 +43,7 @@
      .container p {
     color: white;
 }
-</style>
+  </style>
 </head>
 <body>
 <div class="container">
@@ -143,6 +143,15 @@
       </div>
     </div>
 
+    <!--Campo para URL de la imagen-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="imagen">Ruta de la Imagen del Empleado:</label>
+        <div class="col-md-6">
+          <input type="text" th:field="*{imagen}" class="form-control" id="imagen" placeholder="Ingrese la ruta o URL de la imagen">
+        </div>
+      </div>
+    </div>
 
     <!--Boton para enviar todo y ejecutar accion -->
     <div class="row">
@@ -156,7 +165,8 @@
   <br>
   <a href="javascript: history.go(-1)" class="btn btn-info" role="button">Atrás</a>
 
-</div><!--script para ocultar la contraseña-->
+</div>
+<!--script para ocultar la contraseña-->
 <script th:inline="javascript">
   window.onload=function(){
   document.getElementById("password").type="password"}

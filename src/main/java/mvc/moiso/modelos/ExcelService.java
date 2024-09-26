@@ -18,7 +18,9 @@ public class ExcelService {
     private MovimientosRepository movimientosRepository; //movimientosRepository es un repositorio
 
     public ByteArrayInputStream exportarMovimientosAExcel() throws IOException {
-        String[] columnas = {"ID", "Código concepto", "Monto", "Fecha"};
+        // Agregar la nueva columna para la URL del soporte PDF
+        String[] columnas = {"ID", "Código concepto", "Monto", "Fecha", "URL Soporte PDF"};
+
         try (
                 Workbook workbook = new XSSFWorkbook();
                 ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -42,6 +44,13 @@ public class ExcelService {
                 row.createCell(1).setCellValue(movimiento.getConcepto());
                 row.createCell(2).setCellValue(movimiento.getMonto());
                 row.createCell(3).setCellValue(movimiento.getFecha().toString());
+
+                // Agregar el campo de la URL del soporte PDF
+                if (movimiento.getSoportePdfUrl() != null) {
+                    row.createCell(4).setCellValue(movimiento.getSoportePdfUrl());
+                } else {
+                    row.createCell(4).setCellValue("No disponible");
+                }
             }
 
             workbook.write(out);

@@ -73,12 +73,12 @@
         <th>Concepto</th>
         <th>Usuario Responsable</th>
         <th>Fecha del Movimiento</th>
+        <th>Soporte PDF</th> <!-- Nueva columna para el soporte PDF -->
         <th>Editar</th>
         <th>Eliminar</th>
     </tr>
 
     <!--Llenamos la tabla dibujada-->
-    <!--En nuestro controller, creamos en viewMovimientos un modelo con un atributo llamado movlist donde esta guardada la lista de todos los movimientos-->
     <tr th:each="movimiento : ${movlist}">
         <td th:text="${movimiento.id}"></td>
         <td class="text-right" th:text="${#numbers.formatCurrency(movimiento.monto)}"></td>
@@ -92,6 +92,11 @@
         <td th:if="${movimiento.concepto=='8'}">Nomina</td>
         <td th:text="${movimiento.usuario.nombre}"></td>
         <td th:text="${#dates.format(movimiento.fecha, 'dd/MM/yyyy')}"></td>
+        <td>
+            <!-- Mostrar el enlace si hay URL -->
+            <a th:if="${movimiento.soportePdfUrl != null}" th:href="${movimiento.soportePdfUrl}" target="_blank">Ver Soporte</a>
+            <span th:if="${movimiento.soportePdfUrl == null}">No disponible</span>
+        </td>
         <td><button type="button" class="btn btn-warning"><a th:href="@{/EditarMovimiento/{id}(id=${movimiento.id})}">Editar</a></button></td>
         <td><button type="button" class="btn btn-danger"><a th:href="@{/EliminarMovimiento/{id}(id=${movimiento.id})}">Eliminar</a></button></td>
     </tr>

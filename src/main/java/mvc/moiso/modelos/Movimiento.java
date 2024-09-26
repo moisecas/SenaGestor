@@ -13,9 +13,11 @@ public class Movimiento {
     private int id;
     private long monto;
     private String concepto;
-    @Lob
-    @Column(name="soportePdf", columnDefinition="BLOB")
-    private byte[] soportePdf;
+
+
+    @Column(name="soportePdfUrl")
+    private String soportePdfUrl;
+
     @ManyToOne
     @JoinColumn(name = "empleado_id")
     private Empleado usuario;
@@ -26,12 +28,12 @@ public class Movimiento {
     public Movimiento() {
     }
 
-    public Movimiento(long monto, String concepto, Empleado empleado, Date fecha, byte[] soportePdf) {
+    public Movimiento(long monto, String concepto, Empleado empleado, Date fecha, String soportePdfUrl) {
         this.monto = monto;
         this.concepto = concepto;
         this.usuario = empleado;
-        this.fecha=fecha;
-        this.soportePdf = soportePdf;
+        this.fecha = fecha;
+        this.soportePdfUrl = soportePdfUrl; // URL del soporte PDF
     }
 
     public int getId() {
@@ -74,16 +76,17 @@ public class Movimiento {
         this.fecha = fecha;
     }
 
-    public byte[] getSoportePdf() {
-        return soportePdf;
+
+    public String getSoportePdfUrl() {
+        return soportePdfUrl;
     }
 
-    public void setSoportePdf(byte[] soportePdf) {
-        this.soportePdf = soportePdf;
+    public void setSoportePdfUrl(String soportePdfUrl) {
+        this.soportePdfUrl = soportePdfUrl;
     }
+
 
     public double getDescripcion() {
         return 0;
-
     }
 }

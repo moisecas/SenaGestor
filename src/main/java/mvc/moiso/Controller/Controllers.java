@@ -254,12 +254,12 @@ public ResponseEntity<byte[]> descargarMovimientosExcel() throws IOException {
 
     @PostMapping("/GuardarMovimiento")
     public String guardarMovimiento(@ModelAttribute("mov") Movimiento movimiento,
-                                    @RequestParam("soportePdf") MultipartFile soportePdf,
+                                    @RequestParam("soportePdfUrl") String soportePdfUrl,
                                     Model model,
                                     RedirectAttributes redirectAttributes) {
         try {
-            if (!soportePdf.isEmpty()) {
-                movimiento.setSoportePdf(soportePdf.getBytes()); // Guardar el archivo como byte[]
+            if (!soportePdfUrl.isEmpty()) {
+                movimiento.setSoportePdfUrl(soportePdfUrl); // Guardar la URL del archivo
             }
 
             movimientosService.saveOrUpdateMovimiento(movimiento);
@@ -270,6 +270,7 @@ public ResponseEntity<byte[]> descargarMovimientosExcel() throws IOException {
             return "verMovimientos";
         }
     }
+
 
     @GetMapping("/EditarMovimiento/{id}")
     public String editarMovimento(Model model, @PathVariable Integer id, @ModelAttribute("mensaje") String mensaje){
